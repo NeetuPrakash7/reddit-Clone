@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale =1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Reddit Clone</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">-->
+
+</head>
+<body>
+	<header class="grid1">
+		<ul>
+			<li class="mySubs"><strong>MY SUBREDDITS</strong></li>
+			<li>-</li>
+
+		    <li id="redHack">HOME</li>
+		    <li>-</li>
+			<li>POPULAR</li>
+			<li>-</li>
+			<li>ALL</li>
+			<li>-</li>
+			<li>RANDOM</li>
+			<li>-</li>
+			<li>USERS</li>
+			<li>-</li>
+			<li>|</li>
+			<li>-</li>
+			<li>WEBDEV</li>
+			<li>-</li>
+			<li>WEB DESIGN</li>
+			<li>-</li>
+			<li>NODE</li>
+			<li>-</li>
+			<li>NEWTUBERS</li>
+			<li>-</li>
+			<li>MACHINE LEARNING</li>
+			<li>-</li>
+			<li><strong>EDIT</strong></li>
+		</ul>
+	</header>
+	<nav class="grid3">
+		<img src="assets/reddit.png" alt="REDDIT" class="redditPic">
+		<div>
+			<ul>
+				<li id="hotHack">HOT</li>
+				<li>new</li>
+				<li>rising</li>
+				<li>Controversial</li>
+				<li>Top</li>
+				<li>Gilded</li>
+				<li>Wiki</li>
+			</ul>
+		</div>
+		<div class="profileOps">
+			<div>
+				<ul>
+					<li>SnowyBlossoms</li>
+					<li>(9,000)</li>
+					<li><strong>Preferences</strong></li>
+					<li>Logout</li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+	<div id="main" class="grid4">
+		<div>
+			<div class="post">
+				<div class="postNum">1</div>
+				<div class="postUpvotes">
+					<div class="arrowUp" onclick="vote()" id="upvote"></div>
+					<div id="votes">1459</div>
+					<div class="arrowDown" onclick="voteDown()" id="downVote"></div>
+
+				</div>
+				<div class="postBody">
+					<a href="#" class="postTitle">Learn HTML/CSS And JavaScript By Creating Reddit</a>
+					<span class="postLocation">(self.WOOHOO)</span>
+					<p>Submitted 10 hrs ago* by <a href="#" class="submitLink">SnowyBlossoms</a> to <a href="#" class="submitLink">/r/yadayada</a></p>
+				    <div class="postOptions">
+					<span>150 Comments</span>
+					<span>share</span>
+					<span>Save</span>
+					<span>Hide</span>
+					<span>Report</span>
+					<span>Crosspost</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="searchContainer">
+		<input type="text" placeholder="Search" class="searchText">
+		<button class="searchButton">
+			<a href="#"><img src="assets/search.png" id="magnifier"></a>
+		</button>
+		<button class="userButton">Submit a new Link</button>
+		<button class="userButton">Submit a new Text Post</button>
+		<button class="userButton">Create your own Sub-reddit</button>
+		<div class="redditGold">
+			<div>Daily reddit Gold Goal</div>
+			<div>
+				<div class="barContainer">
+					<div class="bar"></div>
+				</div>
+				<span class="goldPercent">100%</span>
+			</div>
+			<button class="redditGoldSupport">Help Support reddit</button>
+		</div>
+	</div>
+	<!--<div></div>-->
+</div>
+
+<script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
